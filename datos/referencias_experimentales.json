@@ -1,0 +1,6 @@
+{
+  "_nota": "Energías experimentales en eV del sólido cristalino, salvo que se indique. Las moléculas aisladas (gas o disolución) tienen S1 más alto: el cristal lo rebaja unos 0.3 eV. Fuente secundaria consultada: Birech et al., tesis de Stellenbosch (2014), que resume Smith y Michl, Chem. Rev. 110, 6891 (2010). Pendiente: contrastar cada valor con su fuente primaria.",
+  "tetraceno": {"s1": 2.32, "t1": 1.25, "estado": "cristal"},
+  "pentaceno": {"s1": 1.83, "t1": 0.86, "estado": "cristal"},
+  "antraceno": {"s1": null, "t1": 1.8, "estado": "cristal", "_nota": "S1 pendiente de fuente verificada"}
+}
