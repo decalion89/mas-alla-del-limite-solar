@@ -34,3 +34,18 @@ sabemos que funciona. Propuesta:
 3. Verificar cualquier candidato con un método de mayor nivel antes de tomar decisiones con su signo.
 
 Hasta que esto esté hecho, el campo `candidato` de `evaluar()` no debe usarse para seleccionar moléculas.
+
+## Sensibilidad al funcional (tetraceno, TDA sobre la geometría B3LYP)
+
+| funcional | S1 | T1 | T2 | S1 − 2T1 | T2 − 2T1 |
+|---|---|---|---|---|---|
+| B3LYP/def2-SVP | 2.71 | 1.42 | 2.69 | −0.14 | −0.15 |
+| PBE0/def2-SVP | 2.78 | 1.40 | 2.68 | −0.02 | −0.13 |
+
+El signo de T2 − 2T1 es negativo con los dos funcionales, y su valor se mueve poco (−0.13 a −0.15 eV). Eso
+indica que el resultado no es un artefacto de un funcional concreto: con TDA, el tetraceno queda ligeramente por
+debajo del criterio T2 ≥ 2T1. Un funcional de rango separado (wB97X) no pudo completarse en este equipo.
+
+Esto no prueba que la pérdida sea grande. Un −0.13 eV se traduce en pérdida pequeña en el cristal, en línea con el
+rendimiento de ~133 % medido por Einzinger et al. Lo que sí queda claro es que el filtro binario `candidato` no
+debe usarse para descartar moléculas.

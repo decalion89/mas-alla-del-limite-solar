@@ -1,0 +1,15 @@
+{
+  "molecula": "tetraceno",
+  "funcional": "pbe0",
+  "metodo": "pbe0/def2-svp, TDA, geometria B3LYP",
+  "s1_tda_eV": [
+    2.783,
+    3.568,
+    3.79
+  ],
+  "t1_tda_eV": 1.402,
+  "t2_tda_eV": 2.675,
+  "s1_menos_2t1_eV": -0.021,
+  "t2_menos_2t1_eV": -0.129,
+  "nota": "Valores tomados del registro de un diagnóstico (diag_tda.py, singletes 801 s, tripletes 1019 s). Reproducible con scripts/sensibilidad_funcional.py tetraceno pbe0."
+}
